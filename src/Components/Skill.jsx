@@ -13,7 +13,7 @@ const Skill = () => {
             </div>
             <div className="w-full text-center mt-10 md:mt-7">
                 <Link to={'/skills'} className="py-2 px-5 rounded-sm bg-zinc-200 hover:opacity-80 active:opacity-60 active:scale-95 font-semibold transition-all ease-in duration-200">
-                    View More
+                    View All
                 </Link>
             </div>
         </div>
