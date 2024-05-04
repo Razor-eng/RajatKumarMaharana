@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const ProjectPageCard = ({ project }) => {
@@ -28,7 +28,7 @@ const ProjectPageCard = ({ project }) => {
                 {project.title}
             </h2>
             <div className="flex gap-5">
-                <button className="text-sm font-semibold bg-blue-400 px-4 p-2 rounded-md hover:opacity-90 active:scale-95 transition-all ease-in duration-150 text-white">Live Link</button>
+                <Link to={project.live} target="_blank" className="text-sm font-semibold bg-blue-400 px-4 p-2 rounded-md hover:opacity-90 active:scale-95 transition-all ease-in duration-150 text-white">Live Link</Link>
                 <button className="text-sm font-semibold bg-green-300 px-4 p-2 rounded-md hover:opacity-80 active:scale-95 transition-all ease-in duration-150 text-zinc-700">
                     Source Code
                 </button>
