@@ -27,14 +27,14 @@ const Project = () => {
     ]
 
     return (
-        <div className="p-10 md:px-28 py-10 h-screen z-10 overflow-hidden bg-[#c3e1f3]">
-            <h1 className="font-bold text-4xl text-stone-700 w-full text-center">My Projects</h1>
-            <div className="grid grid-cols-3 gap-8 mt-10">
+        <div className="p-10 md:px-28 py-10 h-auto md:h-screen z-10 overflow-hidden dark:bg-gray-800 bg-[#c3e1f3]">
+            <h1 className="font-bold text-4xl text-stone-700 dark:text-stone-300 w-full text-center">My Projects</h1>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
                 {AllProjects.map((project, id) => id < 3 && (
                     <ProjectCard project={project} key={id} />
                 ))}
             </div>
-            <div className="w-full text-center mt-6">
+            <div className="w-full text-center mt-10 md:mt-6">
                 <Link to={'/projects'} className="py-2 px-5 rounded-sm bg-zinc-200 hover:opacity-80 active:opacity-60 active:scale-95 font-semibold transition-all ease-in duration-200">
                     View All
                 </Link>

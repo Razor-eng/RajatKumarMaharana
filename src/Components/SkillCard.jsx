@@ -19,22 +19,20 @@ const SkillCard = ({ title, codes, Icon }) => {
     }
 
     return (
-        <div className="bg-white shadow-lg rounded-md">
-            <div className="bg-green-400 text-white rounded-t-md py-6 font-semibold flex flex-col justify-center items-center gap-2">
+        <div className="bg-white dark:bg-zinc-800 shadow-lg dark:shadow-zinc-800 rounded-md">
+            <div className="bg-green-400 dark:bg-zinc-900 text-white rounded-t-md py-6 font-semibold flex flex-col justify-center items-center gap-2">
                 <Icon fontSize={24} />
                 <h1>{title}</h1>
             </div>
-            <div className="flex flex-col py-6 text-zinc-600 font-semibold [&>*:nth-last-child(1)]:border-none">
+            <div className="flex flex-col py-6 font-semibold [&>*:nth-last-child(1)]:border-none">
                 {codes.map((code, id) => (
                     <div
                         key={id}
-                        className="border-b border-zinc-500 py-3 hover:bg-zinc-100 cursor-pointer flex items-center pl-40 gap-2 hover:scale-105 hover:rounded-xl hover:shadow-lg transition-all ease-in duration-150"
+                        className="border-b border-zinc-500 py-3 hover:bg-zinc-100 dark:hover:bg-zinc-900 cursor-pointer flex items-center pl-36 md:pl-40 gap-2 hover:scale-105 hover:rounded-xl hover:shadow-lg transition-all ease-in duration-150"
                         onClick={() => getCode(code)}
                     >
-                        <div className="">
-                            <code.icon fontSize={18} color={code.color} />
-                        </div>
-                        <p className="" style={{ color: `${code.color}` }}>{code.name}</p>
+                        <code.icon fontSize={18} color={code.color} />
+                        <p style={{ color: `${code.color}` }}>{code.name}</p>
                     </div>
                 ))}
             </div>

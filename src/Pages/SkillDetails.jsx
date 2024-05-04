@@ -34,9 +34,9 @@ const SkillDetails = () => {
     }
 
     return (
-        <div className="py-12">
-            <MdKeyboardArrowLeft className="ml-48 bg-zinc-300 hover:opacity-70 cursor-pointer transition-all ease-in duration-150 flex items-center justify-center rounded-full hover:scale-105" fontSize={40} onClick={goBack} />
-            <div className="px-48 py-28">
+        <div className="md:py-12 py-10 h-screen md:overflow-hidden">
+            <MdKeyboardArrowLeft className="md:ml-48 ml-3 bg-zinc-300 hover:opacity-70 cursor-pointer transition-all ease-in duration-150 flex items-center justify-center rounded-full hover:scale-105" fontSize={40} onClick={goBack} />
+            <div className="px-3 md:px-48 md:py-28 py-10">
                 {
                     (codeData !== null && !loading) ?
                         <div>
@@ -44,7 +44,7 @@ const SkillDetails = () => {
                                 <codeData.icon color={codeData?.color} fontSize={100} />
                                 <h2 className="" style={{ color: `${codeData?.color}` }}>{codeData?.name}</h2>
                             </div>
-                            <p className="flex justify-center py-10 text-4xl text-zinc-500">{codeData?.description}</p>
+                            <p className="flex justify-center py-10 text-3xl md:text-4xl text-zinc-600 dark:text-zinc-500">{codeData?.description}</p>
                         </div>
                         :
                         <SkillLoadingSkeleton />

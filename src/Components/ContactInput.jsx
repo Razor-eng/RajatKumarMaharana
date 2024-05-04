@@ -7,7 +7,7 @@ const ContactInput = ({ type, placeholder, value, setValue, name, label }) => {
 
     return (
         <div className="flex flex-col gap-1">
-            <label className="text-lg font-semibold text-zinc-700">{label}</label>
+            <label className="text-lg font-semibold text-zinc-700 dark:text-zinc-300">{label}</label>
             {type !== 'textarea'
                 ?
                 <input
@@ -16,7 +16,7 @@ const ContactInput = ({ type, placeholder, value, setValue, name, label }) => {
                     placeholder={placeholder}
                     value={value}
                     onChange={handleChange}
-                    className="rounded-md p-3 border-none outline-blue-400 text-zinc-500 tracking-wider bg-sky-50"
+                    className="rounded-md p-3 border-none outline-blue-400 text-zinc-500 tracking-wider bg-sky-50 dark:bg-zinc-700 dark:text-white"
                 />
                 :
                 <textarea
@@ -26,7 +26,7 @@ const ContactInput = ({ type, placeholder, value, setValue, name, label }) => {
                     placeholder={placeholder}
                     value={value}
                     onChange={handleChange}
-                    className="rounded-md p-2 border-none outline-blue-400 text-zinc-500 tracking-wider bg-sky-50"
+                    className="rounded-md p-2 border-none outline-blue-400 text-zinc-500 tracking-wider bg-sky-50 dark:bg-zinc-700 dark:text-white"
                 />
             }
         </div>

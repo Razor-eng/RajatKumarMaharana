@@ -18,24 +18,24 @@ const ProjectCard = ({ project }) => {
     }
 
     return (
-        <div className="bg-white shadow-lg rounded-md hover:scale-105 hover:cursor-pointer hover:shadow-2xl hover:opacity-90 transition-all ease-in duration-150">
+        <div className="bg-white dark:bg-zinc-700 shadow-lg dark:shadow-zinc-900 rounded-md hover:scale-105 hover:cursor-pointer hover:shadow-2xl hover:opacity-90 transition-all ease-in duration-150">
             <img
                 src={`/images/${project.title}.png`} alt=""
                 className="h-48 w-full rounded-t-md"
                 onClick={() => getProject(project)}
             />
             <div className="px-6">
-                <h1 className="pt-6 pb-3 font-bold text-xl border-b border-zinc-300"
+                <h1 className="pt-6 pb-3 font-bold text-xl border-b border-zinc-300 dark:text-white"
                     onClick={() => getProject(project)}
                 >{project.title}</h1>
-                <p className="pt-3 pb-6 font-normal border-b border-zinc-300 text-sm text-zinc-500"
+                <p className="pt-3 pb-6 font-normal border-b border-zinc-300 text-sm text-zinc-500 dark:text-zinc-400"
                     onClick={() => getProject(project)}
                 >{project.description}</p>
                 <div className="grid grid-cols-4 gap-1 pt-3 pb-6 border-b border-zinc-300"
                     onClick={() => getProject(project)}
                 >
-                    <h2 className="font-semibold text-zinc-700">Tech Used:</h2>
-                    <div className="flex flex-wrap col-span-3 text-sm text-zinc-600">
+                    <h2 className="font-semibold text-zinc-700 dark:text-zinc-300">Tech Used:</h2>
+                    <div className="flex flex-wrap col-span-3 text-sm text-zinc-600 dark:text-zinc-300">
                         {project.techs.map((code, id) => (
                             <p className="font-semibold" key={id}>
                                 {code} {id !== project.techs.length - 1 && ','}

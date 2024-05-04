@@ -5,7 +5,7 @@ import Skill from "../Components/Skill"
 
 const Home = () => {
     return (
-        <div className="">
+        <div>
             <About />
             <Skill />
             <Project />

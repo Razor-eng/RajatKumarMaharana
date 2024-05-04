@@ -7,10 +7,10 @@ const Projects = () => {
     const [page, setPage] = useState(3);
 
     return (
-        <div className="px-28 py-6 z-10 overflow-x-hidden max-w-screen">
-            <div className="flex flex-col mt-4 gap-2 border-b-2 border-zinc-400 pb-10">
+        <div className="px-3 md:px-28 py-6 z-10 overflow-hidden max-w-screen dark:text-white">
+            <div className="flex flex-col mt-4 gap-2 border-b-2 border-zinc-400 dark:border-zinc-600 pb-10">
                 <h2 className="text-3xl font-semibold animate-in slide-in-from-left-96 duration-500">Recent Projects</h2>
-                <div className="grid grid-cols-3 gap-5 mt-4 animate-in slide-in-from-left-96 duration-500">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-4 animate-in slide-in-from-left-96 duration-500">
                     {MyRecentProjects.map((project, id) => (
                         <ProjectPageCard project={project} key={id} />
                     ))}
@@ -18,7 +18,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-col gap-2 pt-6">
                 <h2 className="text-3xl font-semibold animate-in slide-in-from-right-96 duration-500">All Projects</h2>
-                <div className="grid grid-cols-3 gap-5 mt-4 animate-in slide-in-from-right-96 duration-500">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-4 animate-in slide-in-from-right-96 duration-500">
                     {MyAllProjects.map((project, id) => id < page && (
                         <ProjectPageCard project={project} key={id} />
                     ))}
