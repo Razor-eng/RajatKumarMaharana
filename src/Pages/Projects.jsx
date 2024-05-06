@@ -24,7 +24,7 @@ const Projects = () => {
                                 {MyAllProjects.filter(project => {
                                     return (project.title.toLowerCase().includes(searchTerm.toLowerCase()) || JSON.stringify(project.techs).toLowerCase().includes(searchTerm.toLowerCase()))
                                 }).map((project, id) => (
-                                    <ProjectPageCard project={project} key={id} />
+                                    <ProjectPageCard project={project} searchTerm={searchTerm} key={id} />
                                 ))}
                             </div>
                         </div>

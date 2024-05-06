@@ -2,7 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 /* eslint-disable react/prop-types */
-const ProjectPageCard = ({ project }) => {
+const ProjectPageCard = ({ project, searchTerm }) => {
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -30,12 +30,12 @@ const ProjectPageCard = ({ project }) => {
                     {project.title}
                 </h2>
                 {project.recent &&
-                    <p className="dark:bg-zinc-400 bg-zinc-300 text-zinc-700 px-2 text-sm rounded-md">Recent</p>
+                    <p className="dark:bg-zinc-600 bg-zinc-300 text-zinc-700 dark:text-zinc-400 px-2 text-sm rounded-md">Recent</p>
                 }
             </div>
             <div className="flex items-center flex-wrap gap-3 text-sm border-b border-zinc-400 pb-3 pt-1">
                 {project.techs.map((tech, id) => (
-                    <p className="bg-zinc-300 px-3 text-zinc-500 rounded-md" key={id}>
+                    <p className={`bg-gray-300 dark:bg-zinc-600 shadow-md px-3 text-zinc-600 dark:text-zinc-300 rounded-md ${(searchTerm && tech.toLowerCase().includes(searchTerm.toLowerCase())) && 'dark:bg-zinc-400 dark:text-zinc-600 bg-gray-500 text-zinc-200'}`} key={id}>
                         {tech}
                     </p>
                 ))}
