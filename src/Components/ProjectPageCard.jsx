@@ -35,7 +35,7 @@ const ProjectPageCard = ({ project, searchTerm }) => {
             </div>
             <div className="flex items-center flex-wrap gap-3 text-sm border-b border-zinc-400 pb-3 pt-1">
                 {project.techs.map((tech, id) => (
-                    <p className={`bg-gray-300 dark:bg-zinc-600 shadow-md px-3 text-zinc-600 dark:text-zinc-300 rounded-md ${(searchTerm && tech.toLowerCase().includes(searchTerm.toLowerCase())) && 'dark:bg-zinc-400 dark:text-zinc-600 bg-gray-500 text-zinc-200'}`} key={id}>
+                    <p className={`shadow-md px-3 rounded-md ${(searchTerm && tech.toLowerCase().includes(searchTerm.toLowerCase())) ? 'dark:bg-gray-400 dark:text-zinc-900 bg-gray-400 text-zinc-100' : 'text-zinc-600 dark:text-zinc-300 bg-gray-300 dark:bg-zinc-600'}`} key={id}>
                         {tech}
                     </p>
                 ))}
