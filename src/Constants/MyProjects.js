@@ -1,4 +1,4 @@
-const MyRecentProjects = [
+const MyAllProjects = [
     {
         title: 'GitHub',
         description: 'GitHub allows you to create, store, change, merge, and collaborate on files or code. Any member of a team can access the GitHub repository (think of this as a folder for files) and see the most recent version in real-time. Then, they can make edits or changes that the other collaborators also see.',
@@ -13,7 +13,7 @@ const MyRecentProjects = [
         techs: ['React', 'Redux', 'Chakra-UI', 'Firebase', 'React-Router-Dom'],
         live: 'https://instagram-2024.vercel.app/',
         source: '',
-        recent: 'true',
+        recent: true
     },
     {
         title: 'IMDb',
@@ -23,9 +23,6 @@ const MyRecentProjects = [
         source: '',
         recent: true
     },
-]
-
-const MyAllProjects = [
     {
         title: 'Netflix',
         description: 'Netflix is an American subscription video on-demand over-the-top streaming service. The service primarily distributes original and acquired films and television shows from various genres, and it is available internationally in multiple languages.',
@@ -56,4 +53,4 @@ const MyAllProjects = [
     },
 ]
 
-export { MyRecentProjects, MyAllProjects };
+export default MyAllProjects;
