@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const About = () => {
     return (
         <div className="px-3 md:px-28 h-screen flex items-center justify-between z-10 overflow-hidden">
@@ -8,9 +10,9 @@ const About = () => {
                     <button className="font-semibold text-lg text-white bg-[#60A5FA] min-w-32 text-center px-5 py-2 rounded-md hover:opacity-85 transition-opacity ease-in duration-200">
                         My CV
                     </button>
-                    <button className="font-semibold text-lg text-zinc-600 bg-[#d6e3e1] min-w-32 text-center px-5 py-2 rounded-md  border border-zinc-400 hover:opacity-85 transition-opacity ease-in duration-200">
+                    <Link to={'/projects'} className="font-semibold text-lg text-zinc-600 bg-[#d6e3e1] min-w-32 text-center px-5 py-2 rounded-md  border border-zinc-400 hover:opacity-85 transition-opacity ease-in duration-200">
                         My Projects
-                    </button>
+                    </Link>
                 </div>
             </div>
             <img src="/user.png" alt="" className="animate-in slide-in-from-right-96 duration-500 hidden md:block" />

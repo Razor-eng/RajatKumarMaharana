@@ -41,7 +41,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     return (
         <div className="relative">
             <div className="bg-[#121212] bg-opacity-90 h-16 px-6 md:px-10 md:pl-28 md:py-10 flex justify-between items-center">
-                <div className="text-white" onClick={() => setOpenMenu(true)}>
+                <div className="text-white md:hidden" onClick={() => setOpenMenu(true)}>
                     <GiHamburgerMenu fontSize={30} />
                 </div>
                 <div className="hidden md:flex gap-6 md:gap-10 text-lg font-semibold text-zinc-400 h-full items-center">
