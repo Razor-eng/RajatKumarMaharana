@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
         <div className="bg-white dark:bg-zinc-700 shadow-lg dark:shadow-zinc-900 rounded-md hover:scale-105 hover:cursor-pointer hover:shadow-2xl hover:opacity-90 transition-all ease-in duration-150">
             <img
                 src={`/images/${project.title}.png`} alt=""
-                className="h-48 w-full rounded-t-md"
+                className="h-56 shadow-sm w-full rounded-t-md"
                 onClick={() => getProject(project)}
             />
             <div className="px-6">

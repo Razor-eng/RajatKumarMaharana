@@ -27,7 +27,7 @@ const Project = () => {
     ]
 
     return (
-        <div className="px-3 md:px-28 py-10 h-auto md:h-screen z-10 overflow-hidden dark:bg-gray-800 bg-[#c3e1f3]">
+        <div className="px-3 md:px-28 py-10 h-auto md:min-h-screen z-10 overflow-hidden dark:bg-gray-800 bg-[#c3e1f3]">
             <h1 className="font-bold text-4xl text-stone-700 dark:text-stone-300 w-full text-center">My Projects</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
                 {AllProjects.map((project, id) => id < 3 && (

@@ -38,7 +38,7 @@ const Contacts = () => {
                 </div>
                 <div className="md:px-4 md:pl-10 pt-10 md:pt-0 animate-in slide-in-from-right-96 duration-500">
                     <h2 className="md:text-lg text-2xl font-semibold dark:text-white">Connect With me</h2>
-                    <div className="grid gap-4 md:mt-6 mt-3 md:grid-cols-1 grid-cols-2 md:max-w-64">
+                    <div className="grid gap-4 py-1 md:mt-6 mt-3 md:grid-cols-1 grid-cols-2 md:max-w-64">
                         {connections.map((connection, id) => (
                             <Link to={`${connection.link}${connection.userName}`} target="_blank" className="flex flex-col md:flex-row items-center bg-zinc-50 dark:bg-zinc-700 md:rounded-l-full md:rounded-r-full rounded-xl md:rounded-none border-2 md:border-l-0 md:border-t-0 md:border-b-0 md:border-r-8 hover:scale-105 active:scale-95 hover:opacity-70 transition-all ease-in duration-150" style={{ borderColor: `${connection.color}` }} key={id}>
                                 <div className="p-2 mt-2 md:mt-0 w-fit rounded-full" style={{ backgroundColor: `${connection.color}` }}>

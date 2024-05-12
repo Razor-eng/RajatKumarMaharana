@@ -55,7 +55,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <div className="flex items-center gap-12">
                     <div className="hidden md:flex items-center gap-2">
                         {NavbarSocial.map((item, id) => (
-                            <div className="text-2xl hover:scale-110 hover:opacity-80 active:scale-95 transition-all ease-in duration-100 cursor-pointer" key={id}>
+                            <div className="text-3xl hover:scale-110 hover:opacity-80 active:scale-95 transition-all ease-in duration-100 cursor-pointer" key={id}>
                                 <item.icon color={item.color} />
                             </div>
                         ))}

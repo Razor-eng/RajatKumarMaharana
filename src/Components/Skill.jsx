@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Skill = () => {
     return (
-        <div className="px-3 md:px-28 py-10 h-auto md:h-screen z-10 overflow-x-hidden bg-slate-300 dark:bg-slate-700">
+        <div className="px-3 md:px-28 py-10 h-fit z-10 overflow-x-hidden bg-slate-300 dark:bg-slate-700">
             <h1 className="font-bold text-4xl dark:text-slate-300 text-slate-700 w-full text-center">My Skills</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                 {MySkills.map((skill, id) => id < 3 && (

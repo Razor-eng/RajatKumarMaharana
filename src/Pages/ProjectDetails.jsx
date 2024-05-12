@@ -30,11 +30,11 @@ const ProjectDetails = () => {
                     <div className="flex flex-col gap-8">
                         <img src={`/images/${project?.title}.png`} alt="" className="md:h-96 h-72 rounded-md shadow-xl dark:shadow-zinc-900" />
                         <div className="flex w-full justify-between gap-12">
-                            <Link to={project?.live} target="_blank" className="flex items-center justify-center text-sm md:text-lg gap-4 bg-blue-400 text-white rounded-md md:px-8 py-3 hover:opacity-80 transition-opacity ease-in duration-150 w-full h-fit active:scale-95">
+                            <Link to={project?.live} target="_blank" className="flex items-center justify-center text-sm md:text-lg gap-4 bg-blue-400 text-white rounded-md md:px-8 py-3 hover:opacity-80 transition-all ease-in duration-150 w-full h-fit active:scale-95">
                                 <FaLink fontSize={18} />
                                 <p className="font-semibold">Live Link</p>
                             </Link>
-                            <button className="flex items-center justify-center gap-4 text-sm md:text-lg bg-slate-300 rounded-md md:px-8 py-3 hover:opacity-80 transition-opacity ease-in duration-150 w-full h-fit active:scale-95">
+                            <button className="flex items-center justify-center gap-4 text-sm md:text-lg bg-slate-300 rounded-md md:px-8 py-3 hover:opacity-80 transition-all ease-in duration-150 w-full h-fit active:scale-95">
                                 <FaGithub fontSize={20} />
                                 <p className="font-semibold">Source Code</p>
                             </button>

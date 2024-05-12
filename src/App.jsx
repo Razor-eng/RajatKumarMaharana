@@ -27,7 +27,7 @@ function App() {
 
 
   return (
-    <div className="relative bg-slate-200 dark:bg-zinc-800">
+    <div className="relative bg-slate-200 dark:bg-zinc-800 min-h-screen">
       <BrowserRouter>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>

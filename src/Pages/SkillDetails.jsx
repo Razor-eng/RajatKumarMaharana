@@ -40,11 +40,11 @@ const SkillDetails = () => {
                 {
                     (codeData !== null && !loading) ?
                         <div>
-                            <div className="flex items-end justify-start gap-5 text-6xl font-semibold">
+                            <div className="flex items-end justify-start gap-5 text-4xl md:text-6xl font-semibold">
                                 <codeData.icon color={codeData?.color} fontSize={100} />
                                 <h2 className="" style={{ color: `${codeData?.color}` }}>{codeData?.name}</h2>
                             </div>
-                            <p className="flex justify-center py-10 text-3xl md:text-4xl text-zinc-600 dark:text-zinc-500">{codeData?.description}</p>
+                            <p className="flex justify-center py-10 text-xl md:text-3xl text-zinc-600 dark:text-zinc-500">{codeData?.description}</p>
                         </div>
                         :
                         <SkillLoadingSkeleton />
