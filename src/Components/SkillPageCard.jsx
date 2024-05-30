@@ -20,7 +20,7 @@ const SkillPageCard = ({ skill, id, searchTerm }) => {
     return (
         <div className={`animate-in slide-in-from-${id % 2 == 0 ? 'right' : 'left'}-96 duration-500`}>
             {!searchTerm &&
-                <h3 className="text-xl text-zinc-700 dark:text-zinc-300 flex items-center gap-2">
+                <h3 className="text-xl text-zinc-700 dark:text-zinc-300 flex items-center gap-2 font-semibold">
                     {skill.title} (<skill.icon fontSize={16} />) :
                 </h3>
             }

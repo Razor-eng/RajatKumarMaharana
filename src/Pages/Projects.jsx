@@ -33,7 +33,7 @@ const Projects = () => {
                     <div className="py-4">
                         <div className="flex flex-col mt-4 gap-2 border-b-2 border-zinc-400 dark:border-zinc-600 pb-10">
                             <h2 className="text-3xl font-semibold animate-in slide-in-from-left-96 duration-500">Recent Projects</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-4 animate-in slide-in-from-left-96 duration-500">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-4 animate-in slide-in-from-right-96 duration-500">
                                 {MyAllProjects.map((project, id) => project.recent && (
                                     <ProjectPageCard project={project} key={id} />
                                 ))}

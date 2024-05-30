@@ -28,7 +28,7 @@ const SkillCard = ({ title, codes, Icon }) => {
                 {codes.map((code, id) => (
                     <div
                         key={id}
-                        className="border-b border-zinc-500 py-3 hover:bg-zinc-100 dark:hover:bg-zinc-900 cursor-pointer flex items-center pl-36 md:pl-40 gap-2 hover:scale-105 hover:rounded-xl hover:shadow-lg transition-all ease-in duration-150"
+                        className="border-b border-zinc-500 py-3 hover:bg-zinc-100 dark:hover:bg-zinc-900 cursor-pointer flex items-center pl-36 md:pl-40 gap-2 hover:scale-105 hover:rounded-xl hover:shadow-lg transition-all ease-in duration-150 dark:text-white"
                         onClick={() => getCode(code)}
                     >
                         <code.icon fontSize={18} color={code.color} />
